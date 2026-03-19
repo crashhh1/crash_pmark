@@ -2,6 +2,7 @@ This is my little ESX units tracker built around a UI inspired by GTA:W’s MDC.
 
 ## Install
 
+- Download [Click Here](https://github.com/crashhh1/crash_pmark/releases/tag/Release)
 - Run `@sql/callsigns.sql`
 - Drag `crash_pmark` into resources folder and ensure.
 
