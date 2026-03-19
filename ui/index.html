@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Police Unit Tracker</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="app" class="hidden">
+    <div class="panel">
+      <div class="panel-header">
+        <h2>Police Units</h2>
+        <button id="closeBtn" class="close-btn">X</button>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Callsign</th>
+              <th>Unit</th>
+              <th>Status</th>
+              <th>Location</th>
+              <th>Track</th>
+            </tr>
+          </thead>
+          <tbody id="unitRows"></tbody>
+        </table>
+      </div>
+      <div class="hint">Right click a row to edit status/callsign. Press the marker icon to toggle tracking.</div>
+    </div>
+  </div>
+
+  <div id="editModal" class="modal hidden">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Edit Unit</h3>
+        <button id="editCloseBtn" class="close-btn">X</button>
+      </div>
+      <div class="modal-body">
+        <label for="editCallsign" class="label">Callsign</label>
+        <input id="editCallsign" class="input" type="text" placeholder="Enter callsign" />
+
+        <label for="editStatus" class="label">Status</label>
+        <select id="editStatus" class="input">
+          <option value="Available">Available</option>
+          <option value="Unavailable">Unavailable</option>
+          <option value="Busy">Busy</option>
+          <option value="On-Call">On-Call</option>
+          <option value="On Scene">On Scene</option>
+          <option value="Enroute">Enroute</option>
+        </select>
+      </div>
+      <div class="modal-actions">
+        <button id="editSaveBtn" class="action-btn">Save</button>
+        <button id="editCancelBtn" class="action-btn secondary">Cancel</button>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

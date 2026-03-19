@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: transparent;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.modal-content {
+  width: min(520px, 92vw);
+  background: rgba(242, 242, 242, 0.98);
+  border: 1px solid #c8c8c8;
+  border-radius: 8px;
+  padding: 14px;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-header h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #222;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.label {
+  font-size: 13px;
+  color: #232323;
+}
+
+.input {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 6px;
+  border: 1px solid #d4d4d4;
+  background: #fff;
+  font-size: 14px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.action-btn {
+  border: 0;
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.action-btn.secondary {
+  background: #6b6b6b;
+}
+
+#app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.panel {
+  width: 88vw;
+  max-width: 1200px;
+  height: 74vh;
+  background: rgba(242, 242, 242, 0.97);
+  border-radius: 8px;
+  border: 1px solid #c8c8c8;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid #dadada;
+}
+
+.panel-header h2 {
+  margin: 0;
+  font-size: 18px;
+  color: #222;
+}
+
+.close-btn {
+  border: 0;
+  background: #252525;
+  color: #fff;
+  width: 28px;
+  height: 28px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.table-wrap {
+  overflow: auto;
+  flex: 1;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background: #ececec;
+  position: sticky;
+  top: 0;
+}
+
+th, td {
+  text-align: left;
+  padding: 10px 12px;
+  font-size: 14px;
+  color: #232323;
+  border-bottom: 1px solid #dbdbdb;
+}
+
+tr.active {
+  background: #dce8ff;
+}
+
+.track-btn {
+  border: 0;
+  background: #1e1e1e;
+  color: #fff;
+  border-radius: 3px;
+  width: 28px;
+  height: 28px;
+  cursor: pointer;
+}
+
+.track-btn.active {
+  background: #0079ff;
+}
+
+.hint {
+  padding: 8px 12px;
+  font-size: 12px;
+  color: #333;
+  border-top: 1px solid #dadada;
+}
