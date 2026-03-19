@@ -377,10 +377,6 @@ RegisterNetEvent('crash_pmark:setstatus', function(status)
         showStatusOptions(source)
         return
     end
-    if #status > Config.StatusMaxLength then
-        notify(source, '~r~Status is too long.')
-        return
-    end
     local normalized = normalizeStatus(status)
     if not normalized then
         notify(source, '~r~Invalid status option.')
@@ -402,10 +398,6 @@ RegisterNetEvent('crash_pmark:setstatusForUnit', function(targetSource, status)
     status = trim(status)
     if status == '' then
         notify(source, '~r~Status cannot be empty.')
-        return
-    end
-    if #status > Config.StatusMaxLength then
-        notify(source, '~r~Status is too long.')
         return
     end
     local normalized = normalizeStatus(status)
