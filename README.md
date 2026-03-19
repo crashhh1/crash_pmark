@@ -1,5 +1,10 @@
 This is my little ESX units tracker built around a UI inspired by GTA:W’s MDC. The point is simple: police can see who’s on duty, what callsign they’re running, their status + where they are, and then live tracking them straight from the panel.
 
+## Preview
+
+- [UI Showcase](https://youtu.be/AA3mwDrEdNk)
+- [Functionality Showcase](https://youtu.be/IxJ8CsKGzkE)
+
 ## Install
 
 - Download [Click Here](https://github.com/crashhh1/crash_pmark/releases/tag/Release)
